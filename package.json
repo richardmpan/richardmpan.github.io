@@ -1,0 +1,15 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A personal website hosted on GitHub.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "author": "Yi Pan",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
