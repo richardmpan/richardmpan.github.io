@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Yi Pan, DVM, MS - Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for visual flair -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="antialiased selection:bg-[#00bcd4] selection:text-black">
+
+    <!-- Fixed Header/Navigation -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-[var(--primary-bg)]/90 backdrop-blur-md border-b border-[#333] transition-all duration-300"
+        id="navbar">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 lg:px-8">
+            <a href="#home"
+                class="text-xl font-extrabold text-[var(--text-light)] hover:text-[var(--accent-color)] transition-colors tracking-tight flex items-center gap-2">
+                <i data-lucide="dna" class="w-6 h-6 text-[var(--accent-color)]"></i>
+                YI PAN
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#publications"
+                    class="navbar-link text-[var(--text-muted)] text-sm font-medium uppercase tracking-wide">Publications</a>
+                <a href="#research"
+                    class="navbar-link text-[var(--text-muted)] text-sm font-medium uppercase tracking-wide">Research</a>
+                <a href="#awards"
+                    class="navbar-link text-[var(--text-muted)] text-sm font-medium uppercase tracking-wide">Awards</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-[var(--text-light)] hover:text-[var(--accent-color)]">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+
+        <!-- 1. HOME/BIO Section (Kept Multi-Directional Slide-In) -->
+        <section id="home" class="section-container min-h-screen flex items-center reveal">
+            <div class="grid md:grid-cols-3 gap-10 items-center max-w-6xl w-full">
+                <!-- Text Content (2/3 width on desktop) -->
+                <div class="md:col-span-2">
+                    <div
+                        class="inline-block px-3 py-1 mb-6 border border-[var(--accent-color)] rounded-full slide-left">
+                        <p class="text-[var(--accent-color)] text-xs font-bold tracking-widest uppercase">Ph.D.
+                            Candidate | DVM, MS</p>
+                    </div>
+
+                    <!-- Interactive Header Block - SLIDE LEFT -->
+                    <div class="interactive-header transition-all duration-300 slide-left delay-1">
+                        <h1
+                            class="text-6xl sm:text-7xl md:text-8xl font-black mb-6 leading-none tracking-tight text-white">
+                            Yi Pan.
+                        </h1>
+                        <h2 class="text-2xl sm:text-4xl font-semibold mb-8 text-gray-300 leading-tight">
+                            Targeting Molecular Mechanisms in <span
+                                class="text-[var(--accent-color)]">Hematopoiesis</span> and <span
+                                class="text-[var(--accent-color)]">Cardiovascular Disease</span>.
+                        </h2>
+                    </div>
+
+                    <!-- Bio Paragraph - SLIDE UP -->
+                    <p class="text-lg md:text-xl text-[var(--text-muted)] mb-10 max-w-2xl leading-relaxed slide-up">
+                        Dr. Yi Pan is a Ph.D. Candidate in the School of Medicine at the <strong>University of
+                            Missouri-Columbia</strong>. His research bridges the gap between <strong>Acute Myeloid
+                            Leukemia (AML)</strong> and cardiovascular health, uncovering novel therapeutic targets in
+                        clonal hematopoiesis.
+                    </p>
+                    <!-- Buttons - SLIDE UP WITH DELAY -->
+                    <div class="flex flex-wrap gap-4 items-center slide-up delay-1">
+                        <a href="mailto:richard.m.pan@gmail.com"
+                            class="bg-[var(--accent-color)] text-black px-6 py-3 rounded-full font-bold hover:bg-white transition-colors flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Contact Me
+                        </a>
+                        <a href="#publications"
+                            class="px-6 py-3 rounded-full border border-[#333] hover:border-[var(--text-light)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-light)]">
+                            See Publications
+                        </a>
+                    </div>
+                </div>
+                <!-- Image (1/3 width on desktop) - SLIDE RIGHT -->
+                <div class="md:col-span-1 flex justify-center md:justify-end slide-right">
+                    <!-- Headshot: uploaded:Headshot 3.jpg-48efb791-a5e8-4724-ba13-4e9397d7a1ae -->
+                    <img src="images/Headshot.jpg" alt="Yi Pan Headshot" class="profile-img"
+                        onerror="this.onerror=null; this.src='https://placehold.co/200x200/444/999?text=Yi+Pan';">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PUBLICATIONS Section (Restored style: anchor tag is the card) -->
+        <section id="publications" class="section-container">
+            <h2 class="section-title reveal">Selected Publications</h2>
+
+            <div id="publication-list" class="space-y-6">
+
+                <!-- Pub 1: Science (Under Review) -->
+                <a href="https://www.biorxiv.org/content/10.1101/2025.11.23.690015" target="_blank"
+                    class="card flex flex-col sm:flex-row gap-6 items-start reveal group">
+                    <img src="https://placehold.co/200x280/222/666?text=PREPRINT" alt="Paper Cover Placeholder"
+                        class="paper-cover shadow-lg">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-yellow-500/20 text-yellow-500 text-xs px-2 py-0.5 rounded uppercase font-bold tracking-wider">Under
+                                Review</span>
+                            <span class="text-xs text-[var(--text-muted)]">2025</span>
+                        </div>
+                        <span class="pub-title mb-2">
+                            Clonal Hematopoiesis Associated with TP53 Mutation Promotes Tissue Repair in Acute
+                            Cardiovascular Diseases
+                        </span>
+                        <p class="text-sm text-[var(--text-muted)] mb-3 leading-relaxed">
+                            <strong>Y. Pan (co-corresponding)</strong>, X. Meng, C. Wang, W. Zhou, B. Barrier, L.
+                            Martinez-Lemus, D.-P. Li, Z. Liu, X. Kang.
+                        </p>
+                        <p class="text-sm text-[var(--text-muted)] italic border-l-2 border-[var(--accent-color)] pl-3">
+                            Under review in <strong>Science</strong>.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Pub 2: bioRxiv (Preprint) -->
+                <a href="https://www.biorxiv.org/content/10.1101/2025.10.16.682831v3.abstract" target="_blank"
+                    class="card flex flex-col sm:flex-row gap-6 items-start reveal group">
+                    <img src="https://placehold.co/200x280/222/666?text=PREPRINT" alt="Paper Cover Placeholder"
+                        class="paper-cover shadow-lg">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-yellow-500/20 text-yellow-500 text-xs px-2 py-0.5 rounded uppercase font-bold tracking-wider">Preprint</span>
+                            <span class="text-xs text-[var(--text-muted)]">2025</span>
+                        </div>
+                        <span class="pub-title mb-2">
+                            A Druggable Tumor Suppressor and Leukemic Stem Cell Marker
+                        </span>
+                        <p class="text-sm text-[var(--text-muted)] mb-3 leading-relaxed">
+                            <strong>Y. Pan (co-corresponding)</strong>, C. Wang, X. Meng, W. Zhou, R. Hammer, H. Zheng,
+                            G. Hildebrandt, X. Kang.
+                        </p>
+                        <p class="pub-journal flex items-center gap-2">
+                            <i data-lucide="file-text" class="w-4 h-4"></i> bioRxiv, 2025.2010.2016.682831.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Pub 3: Science Translational Medicine (Published) -->
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11250918/" target="_blank"
+                    class="card flex flex-col sm:flex-row gap-6 items-start reveal group">
+                    <img src="images/AT1R STM cover page.jpg" alt="Science Translational Medicine Cover"
+                        class="paper-cover shadow-lg"
+                        onerror="this.onerror=null; this.src='https://placehold.co/100x140/222/666?text=STM';">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-green-500/20 text-green-500 text-xs px-2 py-0.5 rounded uppercase font-bold tracking-wider">Published</span>
+                            <span class="text-xs text-[var(--text-muted)]">2024</span>
+                        </div>
+                        <span class="pub-title mb-2">
+                            Inhibiting AGTR1 reduces AML burden and protects the heart from cardiotoxicity in mouse
+                            models
+                        </span>
+                        <p class="text-sm text-[var(--text-muted)] mb-3 leading-relaxed">
+                            <strong>Y. Pan</strong>, C. Wang, W. Zhou, Y. Shi, X. Meng, Y. Muhammad, R. D. Hammer, B.
+                            Jia, H. Zheng, D.-P. Li, Z. Liu, G. Hildebrandt, X. Kang.
+                        </p>
+                        <p class="pub-journal flex items-center gap-2">
+                            <i data-lucide="book-open" class="w-4 h-4"></i> Science Translational Medicine 16, ead15931.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Pub 4: Trends in Cancer (Published) -->
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11047023/" target="_blank"
+                    class="card flex flex-col sm:flex-row gap-6 items-start reveal group">
+                    <img src="images/Trends in Cancer 2024.jpg" alt="Trends in Cancer Cover"
+                        class="paper-cover shadow-lg"
+                        onerror="this.onerror=null; this.src='https://placehold.co/100x140/222/666?text=Trends\nCancer';">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-green-500/20 text-green-500 text-xs px-2 py-0.5 rounded uppercase font-bold tracking-wider">Published</span>
+                            <span class="text-xs text-[var(--text-muted)]">2024</span>
+                        </div>
+                        <span class="pub-title mb-2">
+                            Limited dsRNA editing impedes leukemia stem cells
+                        </span>
+                        <p class="text-sm text-[var(--text-muted)] mb-3 leading-relaxed">
+                            <strong>Y. Pan</strong>, X. Kang.
+                        </p>
+                        <p class="pub-journal flex items-center gap-2">
+                            <i data-lucide="book-open" class="w-4 h-4"></i> Trends Cancer 10, 280-282. (Viewpoint)
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Pub 5: Nature Cell Biology (Under Review) -->
+                <a href="https://www.researchsquare.com/article/rs-6515437/v1" target="_blank"
+                    class="card flex flex-col sm:flex-row gap-6 items-start reveal group">
+                    <img src="https://placehold.co/200x280/222/666?text=PREPRINT" alt="Paper Cover Placeholder"
+                        class="paper-cover shadow-lg">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-yellow-500/20 text-yellow-500 text-xs px-2 py-0.5 rounded uppercase font-bold tracking-wider">Preprint</span>
+                            <span class="text-xs text-[var(--text-muted)]">2024</span>
+                        </div>
+                        <span class="pub-title mb-2">
+                            Dynamic localization of leukemia stem cells via CXCL12 regulates leukemia progression
+                        </span>
+                        <p class="text-sm text-[var(--text-muted)] mb-3 leading-relaxed">
+                            C. Wang, <strong>Y. Pan (co-first author)</strong>, R. Dong, W. Zhou, X. Meng, Y. Shi, R.
+                            Nistala, R. D. Hammer, L. Li, X. Kang.
+                        </p>
+                        <p class="text-sm text-[var(--text-muted)] italic border-l-2 border-[var(--accent-color)] pl-3">
+                            Under review in <strong>Nature Cell Biology</strong>.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Pub 6: JAVMA (Published) -->
+                <a href="https://pubmed.ncbi.nlm.nih.gov/37257833/" target="_blank"
+                    class="card flex flex-col sm:flex-row gap-6 items-start reveal group">
+                    <img src="images/JAVMA 2023.webp" alt="JAVMA Cover" class="paper-cover shadow-lg"
+                        onerror="this.onerror=null; this.src='https://placehold.co/100x140/222/666?text=JAVMA';">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span
+                                class="bg-blue-500/20 text-blue-500 text-xs px-2 py-0.5 rounded uppercase font-bold tracking-wider">Veterinary</span>
+                            <span class="text-xs text-[var(--text-muted)]">2023</span>
+                        </div>
+                        <span class="pub-title mb-2">
+                            Addition of two full-thickness simple interrupted sutures to standard incisional gastropexy
+                            increases gastropexy biomechanical strength
+                        </span>
+                        <p class="text-sm text-[var(--text-muted)] mb-3 leading-relaxed">
+                            <strong>Y. Pan (corresponding)</strong>, F. A. Mann, C. Wagner-Mann, R. A. Winholtz.
+                        </p>
+                        <p class="pub-journal flex items-center gap-2">
+                            <i data-lucide="book-open" class="w-4 h-4"></i> J Am Vet Med Assoc 261, 1345-1350.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- See All Link -->
+                <div class="text-center mt-8 reveal">
+                    <a href="https://scholar.google.com/citations?user=your_google_scholar_id" target="_blank"
+                        class="inline-flex items-center gap-2 text-[var(--text-light)] border-b border-[var(--accent-color)] pb-0.5 hover:text-[var(--accent-color)] transition-colors uppercase tracking-wider text-sm font-bold">
+                        View Full List on Google Scholar <i data-lucide="external-link" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. RESEARCH Section (Restored style) -->
+        <section id="research" class="section-container">
+            <h2 class="section-title reveal">Ongoing Research</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="card reveal flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="microscope" class="w-8 h-8 text-[var(--accent-color)]"></i>
+                            <span class="text-xs bg-[#333] text-white px-2 py-1 rounded">Project Lead</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Allergin-1 & Leukemia Stem Cells</h3>
+                        <p class="text-[var(--text-muted)] text-sm leading-relaxed mb-4">
+                            Identifying Allergin-1 as a unique leukemic stem cell marker and therapeutic target.
+                            Inhibition of Allergin-1 suppresses leukemia progression while activating NK cells.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[#333] mt-2">
+                        <span class="text-xs text-[var(--accent-color)] font-mono">Status: Manuscript Prep</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card reveal flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="cpu" class="w-8 h-8 text-[var(--accent-color)]"></i>
+                            <span class="text-xs bg-[#333] text-white px-2 py-1 rounded">AI & Multi-Omics</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Chromatin Architecture in AML</h3>
+                        <p class="text-[var(--text-muted)] text-sm leading-relaxed mb-4">
+                            Integrating paired Hi-C, RNA-seq, ATAC-seq, and epigenomic datasets using AI models to
+                            identify subtype-specific regulatory drivers and 3D genome organization.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-[#333] mt-2">
+                        <span class="text-xs text-[var(--accent-color)] font-mono">Status: Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline / Education (Restored style) -->
+            <div class="mt-16 reveal">
+                <h3 class="text-2xl font-bold mb-8 text-white flex items-center gap-3">
+                    <i data-lucide="graduation-cap" class="text-[var(--accent-color)]"></i>
+                    Academic Timeline
+                </h3>
+                <div class="relative border-l-2 border-[#333] ml-4 space-y-10">
+                    <!-- Item 1: PhD -->
+                    <div class="pl-8 relative">
+                        <div
+                            class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-[var(--accent-color)] ring-4 ring-[var(--primary-bg)]">
+                        </div>
+                        <span class="text-xs text-[var(--accent-color)] font-bold uppercase tracking-wider">2022 -
+                            Present</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Ph.D. Candidate & Research Assistant</h4>
+                        <p class="text-[var(--text-muted)]">University of Missouri, School of Medicine</p>
+                    </div>
+                    <!-- Item 2: MS -->
+                    <div class="pl-8 relative">
+                        <div
+                            class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-[#333] ring-4 ring-[var(--primary-bg)]">
+                        </div>
+                        <span class="text-xs text-[var(--text-muted)] font-bold uppercase tracking-wider">2021 -
+                            2023</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Master of Science (M.S.)</h4>
+                        <p class="text-[var(--text-muted)]">University of Missouri, College of Veterinary Medicine</p>
+                    </div>
+                    <!-- New Item 3: Visiting Student -->
+                    <div class="pl-8 relative">
+                        <div
+                            class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-[#333] ring-4 ring-[var(--primary-bg)]">
+                        </div>
+                        <span class="text-xs text-[var(--text-muted)] font-bold uppercase tracking-wider">2019 -
+                            2020</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Visiting Student</h4>
+                        <p class="text-[var(--text-muted)]">Università degli Studi di Perugia, Dipartimento di Medicina
+                            Veterinaria</p>
+                    </div>
+                    <!-- New Item 4: DVM -->
+                    <div class="pl-8 relative">
+                        <div
+                            class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-[#333] ring-4 ring-[var(--primary-bg)]">
+                        </div>
+                        <span class="text-xs text-[var(--text-muted)] font-bold uppercase tracking-wider">2016 -
+                            2020</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Doctor of Veterinary Medicine (DVM)</h4>
+                        <p class="text-[var(--text-muted)]">Sichuan Agricultural University, College of Veterinary
+                            Medicine</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. AWARDS Section (Restored style: grid with full card link) -->
+        <section id="awards" class="section-container">
+            <h2 class="section-title reveal">Fellowships & Recognition</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <!-- 1. ASH Graduate Hematology Award (2025) -->
+                <a href="https://www.hematology.org/awards/award-recipients/ash-graduate-hematology-award-recipients"
+                    target="_blank" class="card reveal group cursor-pointer">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p
+                                class="text-white font-bold text-lg group-hover:underline decoration-2 underline-offset-4">
+                                ASH Graduate Hematology Award</p>
+                            <p class="text-[var(--text-muted)] text-sm mt-1">American Society of Hematology</p>
+                        </div>
+                        <span class="text-white font-mono text-sm">2025</span>
+                    </div>
+                </a>
+
+                <!-- 2. Provost Scholar (2025) -->
+                <a href="https://provost.missouri.edu/honors-awards/" target="_blank"
+                    class="card reveal group cursor-pointer">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p
+                                class="text-white font-bold text-lg group-hover:underline decoration-2 underline-offset-4">
+                                Provost Scholar</p>
+                            <p class="text-[var(--text-muted)] text-sm mt-1">University of Missouri</p>
+                        </div>
+                        <span class="text-white font-mono text-sm">2025</span>
+                    </div>
+                </a>
+
+                <!-- 3. Mizzou Scholar of Distinction (2025) -->
+                <a href="https://gradschool.missouri.edu/funding/external-funding/scholars-of-distinction/"
+                    target="_blank" class="card reveal group cursor-pointer">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p
+                                class="text-white font-bold text-lg group-hover:underline decoration-2 underline-offset-4">
+                                Mizzou Scholar of Distinction</p>
+                            <p class="text-[var(--text-muted)] text-sm mt-1">University of Missouri</p>
+                        </div>
+                        <span class="text-white font-mono text-sm">2025</span>
+                    </div>
+                </a>
+
+                <!-- 4. Melvin L. Marcus Early Career Investigator Award (2024) -->
+                <a href="https://ondemand.heart.org/p/s/melvin-l-marcus-early-career-investigator-award-in-cardiovascular-sciences-competition-2845"
+                    target="_blank" class="card reveal group cursor-pointer">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p
+                                class="text-white font-bold text-lg group-hover:underline decoration-2 underline-offset-4">
+                                Finalists - Melvin L. Marcus Early Career Investigator Award</p>
+                            <p class="text-[var(--text-muted)] text-sm mt-1">BCVS, AHA</p>
+                        </div>
+                        <span class="text-white font-mono text-sm">2024</span>
+                    </div>
+                </a>
+
+                <!-- 5. BETA Scholar Fellow (2024) -->
+                <a href="https://medicine.missouri.edu/offices-programs/research/education-training/biomedical-entrepreneurship-training-program-for-aging-beta"
+                    target="_blank" class="card reveal group cursor-pointer">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p
+                                class="text-white font-bold text-lg group-hover:underline decoration-2 underline-offset-4">
+                                BETA Scholar</p>
+                            <p class="text-[var(--text-muted)] text-sm mt-1">National Institute of Health (NIH)</p>
+                        </div>
+                        <span class="text-white font-mono text-sm">2024</span>
+                    </div>
+                </a>
+
+                <!-- 6. Outstanding Manuscript Award (2024) -->
+                <a href="https://avmajournals.avma.org/view/journals/javma/261/9/javma.261.9.1262.xml?tab_body=pdf"
+                    target="_blank" class="card reveal group cursor-pointer">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p
+                                class="text-white font-bold text-lg group-hover:underline decoration-2 underline-offset-4">
+                                Outstanding Manuscript Award</p>
+                            <p class="text-[var(--text-muted)] text-sm mt-1">JAVMA</p>
+                        </div>
+                        <span class="text-white font-mono text-sm">2024</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 bg-[var(--accent-color)] text-black p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="mt-20 py-10 border-t border-[#333] bg-[var(--secondary-bg)]">
+        <div
+            class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[var(--text-muted)]">
+            <div>
+                <p class="text-white font-bold">Yi Pan, DVM, MS</p>
+                <p>Researching the future of hematology.</p>
+            </div>
+            <div class="flex gap-6">
+                <!-- GitHub Link -->
+                <a href="https://github.com/richardmpan" target="_blank"
+                    class="hover:text-[var(--accent-color)] transition-colors" aria-label="View GitHub Profile">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <!-- X Link -->
+                <a href="https://x.com/yipan98" target="_blank"
+                    class="hover:text-[var(--accent-color)] transition-colors"
+                    aria-label="Follow Yi Pan on X (Twitter)">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+                <!-- LinkedIn Link -->
+                <a href="https://www.linkedin.com/in/yi-pan-924a091b3/" target="_blank"
+                    class="hover:text-[var(--accent-color)] transition-colors"
+                    aria-label="Connect with Yi Pan on LinkedIn">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Yi Pan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

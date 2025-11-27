@@ -13,14 +13,13 @@
 
 ```
 personal-website/
-├── src/
-│   ├── index.html          # Main HTML file
-│   ├── css/
-│   │   └── styles.css      # All custom styles
-│   ├── js/
-│   │   └── main.js         # All JavaScript functionality
-│   └── images/             # Publication covers, headshot
-│       ├── ...
+├── index.html          # Main HTML file
+├── css/
+│   └── styles.css      # All custom styles
+├── js/
+│   └── main.js         # All JavaScript functionality
+└── images/             # Publication covers, headshot
+├── ...
 ├── package.json            # Dependencies and scripts
 ├── .gitignore              # Git ignore rules
 └── README.md               # This file
@@ -59,7 +58,7 @@ The website will automatically open at `http://localhost:8080`
 
 ### Deployment
 
-Simply deploy the `src/` folder to any static hosting service:
+Simply deploy the project folder to any static hosting service:
 - **GitHub Pages** - Free hosting for GitHub repositories
 - **Netlify** - Continuous deployment with Git integration
 - **Vercel** - Optimized for frontend frameworks
@@ -69,7 +68,7 @@ Simply deploy the `src/` folder to any static hosting service:
 
 ### Update Colors
 
-Edit CSS variables in [src/css/styles.css](src/css/styles.css):
+Edit CSS variables in [css/styles.css](css/styles.css):
 
 ```css
 :root {
@@ -83,7 +82,7 @@ Edit CSS variables in [src/css/styles.css](src/css/styles.css):
 
 ### Update Content
 
-Edit content directly in [src/index.html](src/index.html):
+Edit content directly in [index.html](index.html):
 - **Bio Section** - Lines ~248-297 (profile information)
 - **Publications** - Lines ~300-461 (add/edit publications)
 - **Research Projects** - Lines ~464-556 (ongoing research)
@@ -91,7 +90,7 @@ Edit content directly in [src/index.html](src/index.html):
 
 ### Update Images
 
-Replace images in `src/images/`:
+Replace images in `images/`:
 - `Headshot.jpg` - Your profile photo (recommended: 400x400px, square)
 - Publication cover images - Journal covers or graphical abstracts (recommended: 200x280px)
 
@@ -105,7 +104,7 @@ Update social media links in the footer (lines ~667-683):
 
 ## File Overview
 
-### [src/index.html](src/index.html)
+### [index.html](index.html)
 Main HTML structure containing:
 - Fixed navigation header
 - Hero section with bio
@@ -115,7 +114,7 @@ Main HTML structure containing:
 - Awards section
 - Footer with social links
 
-### [src/css/styles.css](src/css/styles.css)
+### [css/styles.css](css/styles.css)
 Organized custom styles:
 1. CSS Variables
 2. Base Styles
@@ -125,7 +124,7 @@ Organized custom styles:
 6. Typography & Content
 7. Responsive Design
 
-### [src/js/main.js](src/js/main.js)
+### [js/main.js](js/main.js)
 JavaScript functionality:
 - Lucide icons initialization
 - Intersection Observer for scroll animations
@@ -155,7 +154,7 @@ MIT License - feel free to use this template for your own research website!
 ## Contact
 
 **Dr. Yi Pan**
-Email: ypvcm@missouri.edu
+Email: richard.m.pan@gmail.com
 GitHub: [@richardmpan](https://github.com/richardmpan)
 X: [@yipan98](https://x.com/yipan98)
 LinkedIn: [yi-pan-924a091b3](https://www.linkedin.com/in/yi-pan-924a091b3/)
@@ -166,7 +165,7 @@ LinkedIn: [yi-pan-924a091b3](https://www.linkedin.com/in/yi-pan-924a091b3/)
 
 ### Adding New Publications
 
-1. Copy an existing publication card in [src/index.html](src/index.html)
+1. Copy an existing publication card in [index.html](index.html)
 2. Update the href with DOI or paper URL
 3. Update publication image (or use placeholder)
 4. Update status badge (Under Review, Preprint, Published)
@@ -175,7 +174,7 @@ LinkedIn: [yi-pan-924a091b3](https://www.linkedin.com/in/yi-pan-924a091b3/)
 
 ### Modifying Animations
 
-Scroll animations are controlled by classes in [src/css/styles.css](src/css/styles.css):
+Scroll animations are controlled by classes in [css/styles.css](css/styles.css):
 - `.reveal` - Fade in from bottom
 - `.slide-up` - Slide up animation
 - `.slide-left` - Slide in from left
@@ -196,15 +195,15 @@ After making changes:
 
 **Icons not showing:**
 - Check that Lucide script loads from CDN
-- Verify `lucide.createIcons()` runs in [src/js/main.js](src/js/main.js)
+- Verify `lucide.createIcons()` runs in [js/main.js](js/main.js)
 
 **Styles not applying:**
-- Check that [css/styles.css](src/css/styles.css) path is correct
+- Check that [css/styles.css](css/styles.css) path is correct
 - Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
 - Verify CSS file has no syntax errors
 
 **Animations not working:**
-- Check that [js/main.js](src/js/main.js) is loaded
+- Check that [js/main.js](js/main.js) is loaded
 - Verify Intersection Observer is supported (all modern browsers)
 - Check browser console for JavaScript errors
 
