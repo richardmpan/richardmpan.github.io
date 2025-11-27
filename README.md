@@ -1,16 +1,5 @@
 # Dr. Yi Pan - Personal Research Website
 
-A modern, responsive personal research portfolio showcasing publications, ongoing research, and academic achievements in hematology and cardiovascular disease.
-
-## Features
-
-- 🎨 Modern dark theme with smooth scroll animations
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- 🎯 Organized sections: Home, Publications, Research, Awards
-- ⚡ Fast loading with CDN dependencies
-- ♿ Accessible and semantic HTML
-- 🎭 Interactive hover effects and transitions
-
 ## Tech Stack
 
 - **HTML5** - Semantic structure
